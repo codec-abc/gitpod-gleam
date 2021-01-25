@@ -3,8 +3,8 @@
 image:
   file: .gitpod.Dockerfile
 # Command to start on workspace startup (optional)
-tasks:
-  - init: curl https://sh.rustup.rs -sSf | sh
+# tasks:
+#   - init: curl https://sh.rustup.rs -sSf | sh -s
   #- command: gleam --version
 # Ports to expose on workspace startup (optional)
 ports:
