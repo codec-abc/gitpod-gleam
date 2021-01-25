@@ -2,8 +2,7 @@
 image: ghcr.io/gleam-lang/gleam-compiler-ci-test/gleam:107.0.0-elixir
 # Command to start on workspace startup (optional)
 tasks:
-  - init: yarn install
-    command: yarn build
+  - command: gleam --version
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
