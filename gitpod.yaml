@@ -1,9 +1,15 @@
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image: ghcr.io/gleam-lang/gleam-compiler-ci-test/gleam:107.0.0-elixir-alpine
+# image: ghcr.io/gleam-lang/gleam-compiler-ci-test/gleam:107.0.0-elixir-alpine
 # Command to start on workspace startup (optional)
 tasks:
+  #- init: /workspace/gitpod-gleam/install.sh
   - command: gleam --version
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
     onOpen: open-preview
+vscode:
+  extensions:
+    - rust-lang.rust@0.7.8:CvNqMTgDdt3UXt+6BCDTVg==
+    - JakeBecker.elixir-ls@0.2.25:X1tqg5Hmluq055QJpf0/7A==
+    - mjmcloug.vscode-elixir@1.1.0:w8GjsJyyhVFmCZmBc2Ws7A==
