@@ -1,5 +1,7 @@
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image: ghcr.io/gleam-lang/gleam-compiler-ci-test/gleam:107.0.0-elixir-alpine
+# image: ghcr.io/gleam-lang/gleam-compiler-ci-test/gleam:107.0.0-elixir-alpine
+image:
+  file: .gitpod.Dockerfile
 # Command to start on workspace startup (optional)
 tasks:
   - init: curl https://sh.rustup.rs -sSf | sh
